@@ -1,0 +1,47 @@
+/* GOOGLE INTER FONT */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&display=swap");
+
+/* GENERAL STYLES */
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+/* NAVIGATION STYLES 
+  FIGURE OUT HOW TO NOT MAKE THE DIV SPREAD THE WHOLE WIDTH OF THE PAGE!
+
+*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__wrapper {
+  display: flex;
+  width: auto;
+}
+.logo__img--wrapper {
+  margin: 50px 50px;
+  max-width: 50px;
+  display: flex;
+}
+.logo__img {
+  max-width: 50px;
+  width: 100%;
+}
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__links--wrapper {
+  display: flex;
+}
