@@ -7,28 +7,60 @@
     <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <div class="row">
-        <div class="nav--wrapper">
-          <div class="logo__img--wrapper">
+    <section id="landing">
+      <nav>
+        <div class="nav__container">
+          <div class="nav__logo">
             <img
               src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
               alt="Treact Logo"
-              class="logo__img"
+              class="nav__logo--img"
             />
+            <div class="nav__logo--text">Treact</div>
           </div>
+
           <div class="nav__links--wrapper">
             <ul class="nav__links">
-              <li class="nav__link">About</li>
-              <li class="nav__link">Blog</li>
-              <li class="nav__link">Pricing</li>
-              <li class="nav__link">Contact Us</li>
+              <li class="nav__link">
+                <a href="#" class="link__hover-effect">About</a>
+              </li>
+              <li class="nav__link">
+                <a href="#" class="link__hover-effect">Blog</a>
+              </li>
+              <li class="nav__link">
+                <a href="#" class="link__hover-effect">Pricing</a>
+              </li>
+              <li class="nav__link">
+                <a href="#" class="link__hover-effect">Contact Us</a>
+              </li>
+              <li class="nav__link nav__link--login">
+                <a href="#" class="link__hover-effect">Login</a>
+              </li>
+              <li class="nav__link">
+                <a href="#" class="nav__link--register">Register</a>
+              </li>
             </ul>
           </div>
-          <div class="nav__login--wrapper"></div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="header__description">
+            <h1>
+              Beautiful React Templates
+              <span class="text--purple">for you</span>
+            </h1>
+          </div>
+          <figure class="header__img--wrapper">
+            <img
+              src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+              class="header__img"
+              alt="Woman sitting at a desk with a desktop computer"
+            />
+          </figure>
         </div>
       </div>
-    </nav>
+    </section>
     <main></main>
     <footer></footer>
   </body>

@@ -7,14 +7,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.row {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  color: #243e63;
 }
 ul {
   list-style: none;
+}
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+li {
+  position: relative;
+}
+.container {
+  padding: 96px 0;
+}
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
 }
 /* NAVIGATION STYLES 
   FIGURE OUT HOW TO NOT MAKE THE DIV SPREAD THE WHOLE WIDTH OF THE PAGE!
@@ -22,26 +35,94 @@ ul {
 */
 nav {
   display: flex;
+  height: 80px;
+  justify-content: center;
+}
+.nav__container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1280px;
 }
-.nav__wrapper {
-  display: flex;
-  width: auto;
-}
-.logo__img--wrapper {
-  margin: 50px 50px;
-  max-width: 50px;
+.nav__logo {
   display: flex;
 }
-.logo__img {
+.nav__logo--img {
   max-width: 50px;
   width: 100%;
+}
+.nav__logo--text {
+  font-weight: 1000;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 28px;
+}
+.nav__links--wrapper {
+  display: flex;
 }
 .nav__links {
   display: flex;
   justify-content: space-between;
 }
-.nav__links--wrapper {
+.nav__link {
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 16px;
   display: flex;
+  align-items: center;
+}
+/* .nav__link:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 80%;
+  background: #6415ff;
+  transition: all 300ms ease;
+} */
+
+.link__hover-effect::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: currentColor;
+  width: 0;
+  right: 0;
+  transition: all 500ms ease;
+  color: #6415ff;
+  bottom: -4px;
+}
+
+.link__hover-effect:hover:after {
+  left: 0;
+  width: 100%;
+  transition: all 300ms ease;
+}
+.nav__link--login {
+  margin-left: 40px;
+}
+.nav__link--register {
+  background-color: #6415ff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* HEADER STYLES */
+.header__description {
+  width: 40%;
+}
+.header__img--wrapper {
+  width: 60%;
+}
+.header__img {
+  width: 100%;
+  /* max-width: 768px; */
+}
+.text--purple {
+  color: #6415ff;
 }
