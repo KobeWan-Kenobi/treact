@@ -34,10 +34,10 @@
                 <a href="#" class="link__hover-effect">Contact Us</a>
               </li>
               <li class="nav__link nav__link--login">
-                <a href="#" class="link__hover-effect">Login</a>
+                <a href="#" class="link__hover-effect no-click">Login</a>
               </li>
               <li class="nav__link">
-                <a href="#" class="nav__link--register">Register</a>
+                <a href="#" class="nav__link--register no-click">Register</a>
               </li>
             </ul>
           </div>
@@ -54,6 +54,18 @@
               Our templates are easy to setup, understand and customize. Fully
               modular components with a variety of pages and components.
             </p>
+            <div class="header__email">
+              <input
+                type="text"
+                name="email"
+                autocomplete="email"
+                id="header__email--input"
+                placeholder="Your e-mail address"
+              />
+              <button class="header__email--button no-click">
+                Get Started
+              </button>
+            </div>
           </div>
           <figure class="header__img--wrapper">
             <img
