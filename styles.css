@@ -31,6 +31,11 @@ li {
   margin: 0 auto;
   display: flex;
 }
+.row--narrow {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 240px;
+}
 .no-click {
   cursor: not-allowed;
 }
@@ -178,6 +183,41 @@ nav {
   top: 8px;
   bottom: 8px;
   left: calc(
-    100% - 10% - 33% - 2%
-  ); /* 100 - leftover from input (10%) - elementwidth(33%) - 2% to add padding */
+    100% - 10% - 33% - 1.5%
+  ); /* 100 - leftover from input (10%) - elementwidth(33%) - 1.5% to add space from right */
+}
+
+.header__paragraph--customers {
+  font-size: 12px;
+  color: lightslategray;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 12px;
+}
+
+.header__description--logos {
+  width: 80%;
+  opacity: 0.5;
+}
+
+/* FEATURES */
+
+.section__title,
+.section__title--service {
+  text-align: center;
+}
+.section__title {
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.section__title--service {
+  font-size: 52px;
+  margin: 16px 0;
+}
+.section__features--paragraph {
+  font-size: 18px;
+  max-width: 580px;
+  color: lightslategray;
+  text-align: center;
+  margin: 0 auto;
 }
