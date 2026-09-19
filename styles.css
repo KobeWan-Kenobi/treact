@@ -16,7 +16,9 @@ a {
   text-decoration: none;
   position: relative;
 }
-
+h1 {
+  color: #000;
+}
 li {
   position: relative;
 }
@@ -115,7 +117,10 @@ nav {
 /* HEADER STYLES */
 .header__description {
   width: 40%;
+  padding: 20px 10px;
+  font-size: 28px;
 }
+
 .header__img--wrapper {
   width: 60%;
 }
@@ -125,4 +130,10 @@ nav {
 }
 .text--purple {
   color: #6415ff;
+}
+.header__description--paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 32px;
+  line-height: 1.5;
 }
