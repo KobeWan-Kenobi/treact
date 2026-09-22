@@ -34,7 +34,7 @@ li {
 .row--narrow {
   width: 100%;
   max-width: 1024px;
-  margin: 0 240px;
+  margin: 0 auto;
 }
 .no-click {
   cursor: not-allowed;
@@ -212,7 +212,7 @@ nav {
 }
 .section__title--service {
   font-size: 52px;
-  margin: 16px 0;
+  margin: 24px 0;
 }
 .section__features--paragraph {
   font-size: 18px;
@@ -220,4 +220,41 @@ nav {
   color: lightslategray;
   text-align: center;
   margin: 0 auto;
+  line-height: 1.5;
+}
+
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 56px 0;
+}
+
+.feature{
+  display: flex;
+  width: calc(100%/3);
+  margin: 56px 0px;
+  padding: 0px 12px;
+}
+.feature__img{
+  height: 64px;
+  width: 64px;
+  border: 2px solid #4c4c4c14;
+  border-radius: 50%;
+  padding: 18px;
+  margin: 0 16px;
+}
+.feature__description{
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__title{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.feature__paragraph{
+  font-size: 16px;
+  line-height: 1.75;
+  color: lightslategray;
 }
