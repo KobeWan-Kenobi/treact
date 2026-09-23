@@ -121,6 +121,7 @@ nav {
 }
 .nav__link--signup,
 .quality-work__button,
+.btn,
 .header__email--button {
   background-color: #6415ff;
   transition: background-color 300ms ease;
@@ -217,10 +218,11 @@ nav {
 }
 .section__title--service {
   font-size: 52px;
-  margin: 16px 0;
+  margin: 20px 0;
   font-weight: 800;
 }
-.section__paragraph {
+.section__paragraph,
+.values__paragraph {
   font-size: 18px;
   max-width: 580px;
   color: #7c8ba1;
@@ -270,7 +272,8 @@ nav {
 .text--left {
   text-align: left;
 }
-.quality-work__description {
+.quality-work__description,
+.values__description {
   width: 50%;
   margin-right: 64px;
 }
@@ -320,6 +323,8 @@ nav {
 }
 .step {
   display: flex;
+  margin-bottom: 24px;
+  max-width: 75%;
 }
 .step__number {
   color: #cbd5e0;
@@ -338,7 +343,13 @@ nav {
 .step__paragraph {
   font-size: 16px;
   margin-top: 12px;
-  line-height: 1.5;
+  line-height: 2;
   font-weight: 500;
   color: #718096;
+}
+
+/* VALUES */
+.values__paragraph {
+  margin-left: 0;
+  line-height: 1.75;
 }
