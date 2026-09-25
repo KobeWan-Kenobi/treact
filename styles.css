@@ -349,7 +349,45 @@ nav {
 }
 
 /* VALUES */
-.values__paragraph {
+.values__paragraph, .value__description {
   margin-left: 0;
+  margin-bottom: 20px;
   line-height: 1.75;
+  color: #718096;
+}
+
+.values__list{
+  display: flex;
+}
+.value{
+  margin: 0 12px;
+}
+.value__title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.value__description{
+  line-height: 1.5;
+}
+
+.affordable, .professionalism{
+  padding: 12px;
+  border-radius: 50%;
+  font-weight: 200;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+.affordable{
+  background-color: #9ae6b522;
+  filter: brightness(0) saturate(100%) invert(33%) sepia(33%) saturate(792%) hue-rotate(100deg) brightness(89%) contrast(83%);
+
+}
+.professionalism{
+  background-color: #9b2c2c22;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(96%) saturate(1190%) hue-rotate(338deg) brightness(98%) contrast(86%);
 }
