@@ -120,7 +120,6 @@ nav {
   margin-left: 40px;
 }
 .nav__link--signup,
-.quality-work__button,
 .btn,
 .header__email--button {
   background-color: #6415ff;
@@ -349,20 +348,21 @@ nav {
 }
 
 /* VALUES */
-.values__paragraph, .value__description {
+.values__paragraph,
+.value__description {
   margin-left: 0;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   line-height: 1.75;
   color: #718096;
 }
 
-.values__list{
+.values__list {
   display: flex;
 }
-.value{
-  margin: 0 12px;
+.value {
+  margin: 0 16px 16px 0;
 }
-.value__title{
+.value__title {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -370,11 +370,12 @@ nav {
   align-items: center;
 }
 
-.value__description{
+.value__description {
   line-height: 1.5;
 }
 
-.affordable, .professionalism{
+.affordable,
+.professionalism {
   padding: 12px;
   border-radius: 50%;
   font-weight: 200;
@@ -382,12 +383,24 @@ nav {
   width: 20px;
   height: 20px;
 }
-.affordable{
-  background-color: #9ae6b522;
-  filter: brightness(0) saturate(100%) invert(33%) sepia(33%) saturate(792%) hue-rotate(100deg) brightness(89%) contrast(83%);
-
+.affordable {
+  background-color: #9ae6b4;
+  /* filter: brightness(0) saturate(100%) invert(33%) sepia(33%) saturate(792%)
+    hue-rotate(100deg) brightness(89%) contrast(83%); */
 }
-.professionalism{
-  background-color: #9b2c2c22;
-  filter: brightness(0) saturate(100%) invert(20%) sepia(96%) saturate(1190%) hue-rotate(338deg) brightness(98%) contrast(86%);
+.professionalism {
+  background-color: #feb2b2;
+  /* filter: brightness(0) saturate(100%) invert(20%) sepia(96%) saturate(1190%)
+    hue-rotate(338deg) brightness(98%) contrast(86%); */
+}
+
+.values__img {
+  max-width: 50%;
+}
+
+/* PRICING */
+
+.row--pricing {
+  display: flex;
+  flex-direction: column;
 }
