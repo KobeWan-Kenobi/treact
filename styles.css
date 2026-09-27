@@ -388,12 +388,17 @@ nav {
   /* filter: brightness(0) saturate(100%) invert(33%) sepia(33%) saturate(792%)
     hue-rotate(100deg) brightness(89%) contrast(83%); */
 }
+.affordable path{
+  color: green;
+}
 .professionalism {
   background-color: #feb2b2;
   /* filter: brightness(0) saturate(100%) invert(20%) sepia(96%) saturate(1190%)
     hue-rotate(338deg) brightness(98%) contrast(86%); */
 }
-
+.professionalism path{
+  color: red;
+}
 .values__img {
   max-width: 50%;
 }
