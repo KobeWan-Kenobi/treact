@@ -388,7 +388,7 @@ nav {
   /* filter: brightness(0) saturate(100%) invert(33%) sepia(33%) saturate(792%)
     hue-rotate(100deg) brightness(89%) contrast(83%); */
 }
-.affordable path{
+.affordable path {
   color: green;
 }
 .professionalism {
@@ -396,7 +396,7 @@ nav {
   /* filter: brightness(0) saturate(100%) invert(20%) sepia(96%) saturate(1190%)
     hue-rotate(338deg) brightness(98%) contrast(86%); */
 }
-.professionalism path{
+.professionalism path {
   color: red;
 }
 .values__img {
@@ -408,4 +408,115 @@ nav {
 .row--pricing {
   display: flex;
   flex-direction: column;
+}
+.section__paragraph--pricing {
+  margin-bottom: 32px;
+}
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plan {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  position: relative;
+  margin: 8px 16px;
+  align-items: center;
+  border: solid 2px #dde3eb;
+  border-radius: 0.5rem;
+}
+
+.plan__stripe {
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: -2px;
+  height: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.plan__top {
+  padding: 32px 0;
+  position: relative;
+  width: 100%;
+}
+.plan__top:after,
+.plan__middle:after {
+  content: "";
+  width: 102%;
+  height: 2px;
+  background-color: #dde3eb;
+  position: absolute;
+  bottom: 0px;
+  left: -4px;
+}
+.plan__name,
+.plan__price,
+.plan__duration {
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: center;
+}
+.plan__name,
+.plan__price,
+.plan__target {
+  color: #1a202c;
+}
+.plan__name {
+  font-size: 20px;
+}
+
+.plan__price {
+  font-size: 48px;
+  margin: 4px 0;
+}
+
+.plan__duration {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  color: #a0aec0;
+}
+
+.plan__middle {
+  padding: 28px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.plan__features {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.plan__target {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.plan__feature {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.plan__bottom {
+  padding: 40px 80px;
+}
+
+.plan__buy-now {
+  padding: 20px 40px;
+  font-weight: 700;
+  border-radius: 40px;
 }
