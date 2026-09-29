@@ -415,10 +415,11 @@ nav {
 .plans {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 48px;
 }
 
 .plan {
-  width: 32%;
+  width: 30.5%;
   display: flex;
   flex-direction: column;
   padding: 4px;
@@ -428,7 +429,9 @@ nav {
   border: solid 2px #dde3eb;
   border-radius: 0.5rem;
 }
-
+.plan:nth-child(2){
+  background: linear-gradient(135deg, rgb(76,81,191) 0%, rgb(102, 126,234) 100%);
+}
 .plan__stripe {
   position: absolute;
   left: -2px;
@@ -442,6 +445,10 @@ nav {
     rgb(56, 178, 172) 0%,
     rgb(129, 230, 217) 100%
   );
+}
+/* Middle plan has no stripe */
+.plan:nth-child(2) .plan__stripe{
+  display: none;
 }
 
 .plan__top {
@@ -501,6 +508,8 @@ nav {
 .plan__target {
   margin-bottom: 16px;
   font-weight: 600;
+  font-size: 20px;
+  color: #1a202c;
 }
 .plan__feature {
   display: flex;
@@ -516,7 +525,11 @@ nav {
 }
 
 .plan__buy-now {
-  padding: 20px 40px;
+  padding: 20px 80px;
   font-weight: 700;
   border-radius: 40px;
+  font-size: .875rem;
+  color: #fff;
+  background: linear-gradient(115deg, rgb(56,178,172) 0%, rgb(129,230,217) 100%);
+  border: none;
 }
