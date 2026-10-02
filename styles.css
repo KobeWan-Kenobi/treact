@@ -146,18 +146,23 @@ nav {
   transition: background-color 300ms ease;
 }
 /* HEADER STYLES */
+.row--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+}
 .header__description {
   width: 40%;
   padding: 20px 10px;
   font-size: 28px;
 }
-
 .header__img--wrapper {
   width: 60%;
+  max-width: 650px;
 }
 .header__img {
   width: 100%;
-  /* max-width: 768px; */
 }
 .text--purple {
   color: #6415ff;
@@ -292,12 +297,15 @@ nav {
 .quality-work__img--wrapper {
   width: 50%;
   margin: 0 56px;
+  display: flex;
+  margin: 0 56px;
   position: relative;
+  align-self: center;
 }
 .quality-work__img {
   width: 100%;
+  height: auto;
   z-index: 3;
-  position: relative;
   border: 1px solid rgb(229, 231, 235);
 }
 
@@ -306,7 +314,7 @@ nav {
   height: 80px;
   width: 80px;
   right: -40px;
-  bottom: 30px;
+  bottom: -40px;
   z-index: 0;
   /* i got the below values from a filter generator */
   filter: invert(12%) sepia(99%) saturate(7030%) hue-rotate(264deg)
@@ -552,7 +560,7 @@ nav {
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   transition: all 300ms ease;
 }
-/* 
+/*
  *
  * BUSINESS PLAN ****
  *
@@ -917,4 +925,29 @@ footer {
 .footer__social:hover {
   background-color: #d4d8dd;
   transition: background-color 150ms linear;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1280px) {
+  /* HEADER */
+  h1,
+  .section__title--service,
+  .testimonials__title--service {
+    font-size: 40px;
+  }
+
+  p.header__description--paragraph {
+    font-size: 18px;
+  }
+
+  .header__email--button {
+    font-size: 14px;
+  }
+  .header__img--wrapper {
+    width: 50%;
+    max-width: 575px;
+  }
+
+  /* QUALITY WORK */
 }
