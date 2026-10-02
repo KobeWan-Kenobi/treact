@@ -930,15 +930,38 @@ footer {
 /* RESPONSIVENESS */
 
 @media (max-width: 1280px) {
+  /* NAVIGATION */
+  .nav__logo--img {
+    max-width: 40px;
+    width: 100%;
+  }
+  .nav__logo--text {
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .nav__link {
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
   /* HEADER */
   h1,
   .section__title--service,
   .testimonials__title--service {
     font-size: 40px;
   }
+  .section__paragraph {
+    font-size: 16px;
+  }
 
-  p.header__description--paragraph {
-    font-size: 18px;
+  .header__description--paragraph {
+    font-size: 16px;
   }
 
   .header__email--button {
@@ -948,6 +971,49 @@ footer {
     width: 50%;
     max-width: 575px;
   }
-
+  /* FEATURES */
+  .feature__title {
+    font-size: 20px;
+  }
+  .feature__paragraph {
+    font-size: 14px;
+  }
+  .feature__img {
+    height: 48px;
+    width: 48px;
+    border: 2px solid #4c4c4c14;
+    border-radius: 50%;
+    padding: 12px;
+    margin: 0 16px;
+  }
   /* QUALITY WORK */
+
+  /* buttons */
+  .nav__link--signup,
+  .btn,
+  .header__email--button {
+    padding: 12px 32px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  /* VALUES */
+
+  .values__paragraph {
+    font-size: 16px;
+  }
+  .value__title {
+    font-size: 20px;
+  }
+  .affordable,
+  .professionalism {
+    width: 16px;
+    height: 16px;
+  }
+
+  .value__description {
+    font-size: 16px;
+  }
 }
