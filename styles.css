@@ -749,6 +749,7 @@ nav {
 .start__button--secondary {
   padding: 24px 32px;
   margin: 0 8px;
+  border-radius: 40px;
   width: 50%;
   font-size: 16px;
   transition: all 300ms ease;
@@ -756,7 +757,6 @@ nav {
 
 .start__button--secondary {
   font-weight: 700;
-  border-radius: 40px;
   font-size: 0.875rem;
   color: #6415ff;
   background: white;
@@ -889,8 +889,9 @@ footer {
     font-size: 16px;
   }
 
-  .header__email--button {
+  #header__email--input {
     font-size: 14px;
+    padding-right: 156px;
   }
   .header__img--wrapper {
     width: 50%;
@@ -917,13 +918,23 @@ footer {
   .nav__link--signup,
   .btn,
   .header__email--button {
-    padding: 12px 32px;
+    padding: 12px 16px;
     border: none;
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
   }
-
+  /* STEPS */
+  .step__title {
+    font-size: 18px;
+  }
+  .step__number {
+    font-size: 32px;
+  }
+  .step__paragraph {
+    font-size: 14px;
+    line-height: 1.75;
+  }
   /* VALUES */
 
   .values__paragraph {
@@ -978,7 +989,19 @@ footer {
   .plan__buy-now {
     font-size: 14px;
   }
-
+  /* TESTIMONIALS */
+  .testimonial__name {
+    font-size: 16px;
+  }
+  .testimonial__ceo {
+    font-size: 12px;
+  }
+  .testimonial__title {
+    font-size: 18px;
+  }
+  .testimonial__paragraph {
+    font-size: 14px;
+  }
   /* GET STARTED */
   .start__button,
   .start__button--secondary {
