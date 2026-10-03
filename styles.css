@@ -431,6 +431,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .plan {
@@ -580,27 +582,9 @@ nav {
   );
 }
 
-.plan:nth-child(2) .plan__top {
-  padding: 32px 0;
-  position: relative;
-  width: 100%;
-}
 .plan:nth-child(2) .plan__top:after,
 .plan:nth-child(2) .plan__middle:after {
-  content: "";
-  width: 102%;
-  height: 1px;
   background-color: #a8ccfa55;
-  position: absolute;
-  bottom: 0px;
-  left: -4px;
-}
-.plan:nth-child(2) .plan__name,
-.plan:nth-child(2) .plan__price,
-.plan:nth-child(2) .plan__duration {
-  font-weight: bold;
-  line-height: 1.75;
-  text-align: center;
 }
 /* MIDDLE PLAN COLOR */
 .plan:nth-child(2) .plan__name,
@@ -610,70 +594,15 @@ nav {
 .plan:nth-child(2) .plan__feature {
   color: rgb(255, 254, 239);
 }
-.plan:nth-child(2) .plan__name {
-  font-size: 20px;
-}
-
-.plan:nth-child(2) .plan__price {
-  font-size: 48px;
-  margin: 4px 0;
-}
-
-.plan:nth-child(2) .plan__duration {
-  font-size: 16px;
-  letter-spacing: 0.1rem;
-}
-
-.plan:nth-child(2) .plan__middle {
-  padding: 28px 0;
-  text-align: center;
-  position: relative;
-  width: 100%;
-}
-
-.plan:nth-child(2) .plan__features {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-.plan:nth-child(2) .plan__target {
-  margin-bottom: 16px;
-  font-weight: 600;
-  font-size: 20px;
-}
-.plan:nth-child(2) .plan__feature {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding: 12px 0;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.plan:nth-child(2) .plan__bottom {
-  padding: 40px 80px;
-}
 
 .plan:nth-child(2) .plan__buy-now {
-  padding: 20px 80px;
-  font-weight: 700;
-  border-radius: 40px;
-  font-size: 0.875rem;
   color: #6415ff;
   background: white;
-  border: none;
 }
 
 /* ENTERPRISE PLAN */
 
 .plan:nth-child(3) .plan__stripe {
-  position: absolute;
-  left: -2px;
-  right: -2px;
-  top: -2px;
-  height: 0.5rem;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
   background: linear-gradient(
     115deg,
     rgb(245, 101, 101) 0%,
@@ -683,10 +612,6 @@ nav {
 
 .plan:nth-child(3) .plan__buy-now,
 .start__button {
-  padding: 20px 80px;
-  font-weight: 700;
-  border-radius: 40px;
-  font-size: 0.875rem;
   color: #fff;
   background: linear-gradient(
     115deg,
@@ -842,7 +767,7 @@ nav {
 
 footer {
   background-color: #6415ff;
-  padding: 96px 32px;
+  padding: 40px 32px 28px 32px;
 }
 
 .footer__title {
@@ -858,7 +783,7 @@ footer {
   padding: 0 32px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 .footer__link {
   color: #fff;
@@ -1015,5 +940,55 @@ footer {
 
   .value__description {
     font-size: 16px;
+  }
+
+  /* PRICING */
+
+  .plan {
+    width: 29%;
+  }
+
+  .plan__name {
+    font-size: 16px;
+  }
+
+  .plan__price {
+    font-size: 40px;
+  }
+
+  .plan__duration {
+    font-size: 16px;
+  }
+
+  .plan__middle {
+    padding: 28px 0;
+  }
+
+  .plan__target {
+    font-size: 16px;
+  }
+  .plan__feature {
+    font-size: 14px;
+  }
+
+  .plan__bottom {
+    padding: 40px 80px;
+  }
+
+  .plan__buy-now {
+    font-size: 14px;
+  }
+
+  /* GET STARTED */
+  .start__button,
+  .start__button--secondary {
+    padding: 16px 24px;
+    margin: 0 8px;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .start__button--secondary {
+    color: #6415ff;
   }
 }
