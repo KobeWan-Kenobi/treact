@@ -42,12 +42,15 @@
             </ul>
           </div>
           <!-- BURGER MENU -->
-          <button class="button__menu">
-            <i class="fa-solid fa-bars fa-2xl button__menu-icon"></i>
+          <button class="button__menu" onClick="openMenu()">
+            <i class="fa-solid fa-bars fa-2xl button__menu-bars"></i>
           </button>
           <div class="menu">
-            <button class="button__menu button__menu--close">
-              <i class="fa-solid fa-xmark fa-2xl button__menu-icon"></i>
+            <button
+              class="button__menu button__menu--close"
+              onClick="closeMenu()"
+            >
+              <i class="fa-solid fa-xmark fa-2xl button__menu-x"></i>
             </button>
             <ul class="menu__items">
               <li class="menu__item">
@@ -66,7 +69,7 @@
                 <a href="" class="menu__link">Log In</a>
               </li>
               <li class="menu__item--signup">
-                <a href="" class="menu__link">Sign Up</a>
+                <a href="" class="menu__link--signup">Sign Up</a>
               </li>
             </ul>
           </div>

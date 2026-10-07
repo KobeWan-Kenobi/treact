@@ -149,8 +149,11 @@ nav {
   background-color: #5615d7;
   transition: background-color 300ms ease;
 }
-.button__menu,
-.button__menu-icon,
+
+.button__menu {
+  display: none;
+}
+
 .menu {
   display: none;
 }
@@ -1029,15 +1032,16 @@ footer {
   .nav__links--wrapper {
     display: none;
   }
-  .button__menu-icon,
-  .button__menu,
-  .menu {
+  .menu--open .menu {
     display: grid;
+    opacity: 1;
   }
+
   .button__menu {
     background-color: transparent;
     text-align: center;
     border: none;
+    display: grid;
   }
   .button__menu--close {
     position: fixed;
@@ -1071,7 +1075,19 @@ footer {
   .menu__item--signup {
     padding: 12px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
+  }
+  .menu__item--signup {
+    background-color: #6415ff;
+    border-radius: 24px;
+    margin-top: 8px;
+    padding: 12px 32px;
+  }
+  .menu__link {
+    color: #000;
+  }
+  .menu__link--signup {
+    color: #fff;
   }
 }
 @media (max-width: 768px) {
