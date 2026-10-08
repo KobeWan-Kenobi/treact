@@ -1081,6 +1081,7 @@ footer {
       transform 400ms ease,
       opacity 400ms ease,
       visibility 400ms ease;
+    z-index: 3;
   }
   .menu--open {
     max-height: 100vh;
