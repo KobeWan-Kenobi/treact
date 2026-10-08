@@ -187,13 +187,19 @@ nav {
 }
 .header__email {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 #header__email--input {
   border: solid lightgray 2px;
   border-radius: 36px;
   width: 90%;
   font-size: 16px;
-  padding: 24px 196px 24px 16px; /* Padding left makes room for button*/
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 36%; /* Padding left makes room for button*/
   transition: border-color 300ms ease;
 }
 #header__email--input:hover {
@@ -213,9 +219,8 @@ nav {
   border-radius: 32px;
   top: 8px;
   bottom: 8px;
-  left: calc(
-    100% - 10% - 33% - 1.5%
-  ); /* 100 - leftover from input (10%) - elementwidth(33%) - 1.5% to add space from right */
+  left: calc(100% - 10% - 33% - 1.5%);
+  /* 100 - leftover from input (10%) - elementwidth(33%) - 1.5% to add space from right */
 }
 
 .header__paragraph--customers {
@@ -733,6 +738,7 @@ nav {
 /* START SECTION */
 .container--start {
   padding: 48px 96px;
+  width: 100%;
 }
 
 .row--start {
@@ -903,7 +909,6 @@ footer {
 
   #header__email--input {
     font-size: 14px;
-    padding-right: 156px;
   }
   .header__img--wrapper {
     width: 50%;
@@ -1029,6 +1034,12 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  /* GENERAL STYLES */
+  .container {
+    padding: 48px 0;
+    justify-self: center;
+  }
+  /* MENU STYLES */
   .nav__links--wrapper {
     display: none;
   }
@@ -1036,7 +1047,7 @@ footer {
     display: grid;
     visibility: hidden;
   }
-
+  /* MENU STYLES */
   .button__menu {
     background-color: transparent;
     text-align: center;
@@ -1053,12 +1064,11 @@ footer {
   .menu {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 60vw;
     right: 0;
-    height: 40vh;
     margin: 24px 16px;
     background-color: #fff;
-    height: fit-content;
+    height: 90vh;
     padding: 32px 0;
     border-radius: 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -1108,6 +1118,47 @@ footer {
   }
   .menu__link--signup {
     color: #fff;
+  }
+
+  /* HEADER STYLES */
+  .row--header {
+    flex-direction: column;
+  }
+  .header__description {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__title,
+  .header__description--paragraph {
+    text-align: center;
+  }
+  .header__description--paragraph {
+    margin: 16px 0;
+  }
+  .header__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .header__email {
+    width: 100%;
+    justify-content: center;
+  }
+  .header__email--button {
+    width: 33%;
+    left: calc(100% - 44.5%);
+    font-size: 16px;
+  }
+  #header__email--input {
+    font-size: 16px;
+    padding-right: 35%;
+    width: 80%;
+  }
+
+  .header__img--wrapper {
+    width: 80%;
   }
 }
 @media (max-width: 768px) {
