@@ -1377,7 +1377,11 @@ footer {
   .values__img {
     margin: 24px 0;
   }
-
+  /* START */
+  .start__button,
+  .start__button--secondary {
+    padding: 16px 16px;
+  }
   /* FOOTER */
   .footer__links {
     flex-wrap: wrap;
