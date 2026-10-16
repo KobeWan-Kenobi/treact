@@ -1494,4 +1494,28 @@ footer {
   }
 }
 @media (max-width: 640px) {
+  /* GENERAL */
+  .section__title--service {
+    font-size: 40px;
+  }
+
+  /* FEATURES */
+  .features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feature {
+    width: 375px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature__img {
+    margin-bottom: 16px;
+  }
+  .feature__description {
+    align-items: center;
+  }
+  .feature__paragraph {
+    text-align: center;
+  }
 }
