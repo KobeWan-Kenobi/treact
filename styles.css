@@ -1071,6 +1071,7 @@ footer {
 
 @media (max-width: 1024px) {
   /* GENERAL STYLES */
+  /* body{overflow-y: scroll;} */
   .btn {
     margin-bottom: 24px;
     padding: 16px 32px;
