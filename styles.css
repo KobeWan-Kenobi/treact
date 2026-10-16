@@ -1518,4 +1518,71 @@ footer {
   .feature__paragraph {
     text-align: center;
   }
+  /* QUALITY WORK */
+  .quality-work__description {
+    display: flex;
+    flex-direction: column;
+  }
+  .quality-work__title,
+  .quality-work__title--service,
+  .quality-work__paragraph {
+    text-align: center;
+  }
+  /* VALUES */
+  .values__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .value {
+    margin-bottom: 24px;
+    width: 60%;
+  }
+  .value__title {
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 8px;
+  }
+  .value__description {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  /* PLANS */
+  .plans {
+    flex-direction: column;
+  }
+  .plan {
+    width: 50%;
+  }
+  /* TESTIMONIALS */
+  .row--testimonials {
+    padding: 12px;
+  }
+  .testimonials__description {
+    width: 95%;
+  }
+  .testimonials__title--service {
+    text-align: center;
+  }
+  /* GET STARTED */
+  .row--start {
+    flex-direction: column;
+  }
+  .start__text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .start__buttons {
+    width: 100%;
+  }
+  .start__button,
+  .start__button--secondary {
+    width: 100%;
+  }
+  /* FOOTER */
+  footer {
+    padding: 20px 12px;
+  }
 }
